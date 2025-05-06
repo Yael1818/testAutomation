@@ -42,8 +42,8 @@ public class BooksPage extends Base {
         books=new Book[booksSize()];
         for (int i = 0; i < booksSize(); i++) {
             books[i]=new Book(bookList().get(i).findElement(By.tagName("a")).getText(),
-                    bookList().get(i).findElement(By.xpath("//div/div[3]")).getText(),
-                    bookList().get(i).findElement(By.xpath("//div/div[4]")).getText()
+                    bookList().get(i).findElement(By.xpath(".//div/div[3]")).getText(),
+                    bookList().get(i).findElement(By.xpath(".//div/div[4]")).getText()
                     );
         }
     }
